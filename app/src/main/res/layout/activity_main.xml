@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:layout_marginHorizontal="10dp"
+     android:orientation="vertical"
+     android:id="@+id/main_layout"
+     tools:context=".MainActivity">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:textSize="14sp"
+         android:layout_marginTop="10dp"
+         android:text="V2ray Config :" />
+
+    <EditText
+         android:layout_height="0dp"
+         android:layout_width="match_parent"
+         android:visibility="invisible"
+         android:background="@drawable/ld_editview"
+         android:gravity="top"
+         android:hint="v2ray config goes here"
+         android:textSize="12sp"
+         android:layout_marginTop="4dp"
+         android:layout_weight="1"
+         android:id="@+id/v2ray_config" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="vertical">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginVertical="8dp"
+             android:textSize="14sp"
+             android:id="@+id/connection_mode"
+             android:text="connection mode : VPN_TUN"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginVertical="8dp"
+             android:textSize="14sp"
+             android:id="@+id/server_delay"
+             android:text="server delay : tap to test"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginVertical="8dp"
+             android:textSize="14sp"
+             android:id="@+id/connected_server_delay"
+             android:text="connected server delay : wait for connection"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginVertical="8dp"
+             android:textSize="14sp"
+             android:id="@+id/connection_duration"
+             android:text="connection time : 00:00:00"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginVertical="8dp"
+             android:textSize="14sp"
+             android:id="@+id/connection_speed"
+             android:text="connection speed : 0 B/s | 0 B/s"
+             android:textStyle="bold" />
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_marginVertical="8dp"
+             android:textSize="14sp"
+             android:id="@+id/connection_traffic"
+             android:text="connection traffic : 0 B | 0 B"
+             android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:textSize="14sp"
+         android:layout_marginTop="10dp"
+         android:id="@+id/btn_connection"
+         android:text="DISCONNECTED"
+         android:textStyle="bold" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:textSize="10sp"
+         android:textColor="@color/white"
+         android:id="@+id/core_version"
+         android:layout_gravity="center"
+         android:text="Xray Core 1.8" />
+
+</LinearLayout>
